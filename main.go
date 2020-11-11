@@ -13,7 +13,7 @@ var (
 	tests    = flag.Bool("tests", false, "Include tests for deps analysis")
 	verbose  = flag.Bool("v", false, "Be verbose and print whole deps info table")
 	totals   = flag.Bool("totalonly", false, "Print only totals stats")
-	internal = flag.Bool("internal", false, "Include intertanl packages analysis")
+	internal = flag.Bool("internal", false, "Include internal packages analysis")
 )
 
 func main() {

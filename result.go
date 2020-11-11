@@ -129,7 +129,7 @@ func (r *Result) Suggestions() {
 	}
 }
 
-// Totals represnts total stats for all packages.
+// Totals represents total stats for all packages.
 type Totals struct {
 	Package string
 

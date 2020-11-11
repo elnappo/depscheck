@@ -60,7 +60,7 @@ With `-stdlib` flag, *depscheck* also can analyze stdlib packages and treat them
     depscheck -stdlib -v net/http
     depscheck -stdlib -v github.com/divan/gofresh
 
-Sometimes you want only totals statistics - how many packages, calls and LOC in total used by your package. Use `-totalonly` flag to get single-line easily parseable output with totals. You can even run *depscheck* agains every stdlib package in a loop:
+Sometimes you want only totals statistics - how many packages, calls and LOC in total used by your package. Use `-totalonly` flag to get single-line easily parsable output with totals. You can even run *depscheck* against every stdlib package in a loop:
 
     depscheck -totalonly -stdlib encoding/json
     for i in $(go list std); do depscheck -stdlib -totalonly $i; done

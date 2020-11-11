@@ -38,7 +38,7 @@ func (s *Selector) String() string {
 	return out
 }
 
-// ID generates uniqie string ID for this selector.
+// ID generates unique string ID for this selector.
 func (s *Selector) ID() string {
 	if s.Recv != "" {
 		return fmt.Sprintf("%s.(%s).%s.%s", s.Pkg.Name, s.Recv, s.Type, s.Name)
